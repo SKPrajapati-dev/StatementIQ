@@ -1,0 +1,11 @@
+[
+  {
+    "id": "user_001",
+    "email": "priya.sharma@example.com",
+    "passwordHash": "__BCRYPT_PLACEHOLDER__",
+    "name": "Priya Sharma",
+    "accountNumber": "SIQ00012345",
+    "phone": "+91 98765 43210",
+    "createdAt": "2024-01-15T10:00:00.000Z"
+  }
+]
