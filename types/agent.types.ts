@@ -34,12 +34,6 @@ export interface FinancialGoalOutput {
   priority: number;
 }
 
-export interface QuestionAnswerOutput {
-  answer: string;
-  keyPoints: string[];
-  recommendation: string;
-}
-
 export interface AgentResult {
   summary: CoreSummary;
   goals: FinancialGoalOutput[];

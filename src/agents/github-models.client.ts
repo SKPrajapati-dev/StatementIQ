@@ -45,7 +45,7 @@ export async function runCopilotPrompt(
     session.on("error" as any, (err: unknown) => reject(err));
   });
 
-  await session.send({ prompt: 'Say hello in one sentence' }).then((data) => console.log('Prompt sent successfully', data))
+  await session.send({ prompt: fullPrompt }).then((data) => console.log('Prompt sent successfully', data))
   await done;
 
   await session.disconnect();

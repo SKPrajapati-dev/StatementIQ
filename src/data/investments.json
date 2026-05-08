@@ -1,0 +1,67 @@
+[
+  {
+    "id": "inv_001",
+    "userId": "user_001",
+    "type": "MUTUAL_FUND",
+    "name": "HDFC Midcap Opportunities Fund",
+    "folio": "MF-HDFC-88234",
+    "units": 285.42,
+    "buyPrice": 82.5,
+    "currentPrice": 97.3,
+    "investedAmount": 30000,
+    "currentValue": 27772,
+    "purchaseDate": "2024-11-01T00:00:00.000Z"
+  },
+  {
+    "id": "inv_002",
+    "userId": "user_001",
+    "type": "MUTUAL_FUND",
+    "name": "Axis Bluechip Fund - Direct Growth",
+    "folio": "MF-AXIS-44521",
+    "units": 412.18,
+    "buyPrice": 48.3,
+    "currentPrice": 56.8,
+    "investedAmount": 25000,
+    "currentValue": 23412,
+    "purchaseDate": "2024-05-01T00:00:00.000Z"
+  },
+  {
+    "id": "inv_003",
+    "userId": "user_001",
+    "type": "STOCK",
+    "name": "Infosys Ltd",
+    "folio": "DEMAT-INF-001",
+    "units": 10,
+    "buyPrice": 1450,
+    "currentPrice": 1620,
+    "investedAmount": 14500,
+    "currentValue": 16200,
+    "purchaseDate": "2023-11-01T00:00:00.000Z"
+  },
+  {
+    "id": "inv_004",
+    "userId": "user_001",
+    "type": "GOLD",
+    "name": "Sovereign Gold Bond 2022-23",
+    "folio": "SGB-2022-04321",
+    "units": 5,
+    "buyPrice": 5409,
+    "currentPrice": 6200,
+    "investedAmount": 27045,
+    "currentValue": 31000,
+    "purchaseDate": "2023-09-01T00:00:00.000Z"
+  },
+  {
+    "id": "inv_005",
+    "userId": "user_001",
+    "type": "PPF",
+    "name": "Public Provident Fund",
+    "folio": "PPF-SIQB-22345",
+    "units": 1,
+    "buyPrice": 50000,
+    "currentPrice": 57950,
+    "investedAmount": 50000,
+    "currentValue": 57950,
+    "purchaseDate": "2023-05-01T00:00:00.000Z"
+  }
+]

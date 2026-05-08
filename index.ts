@@ -12,6 +12,7 @@ import loansRoutes from "./src/routes/loans.routes";
 import fdRoutes from "./src/routes/fd.routes";
 import investmentsRoutes from "./src/routes/investments.routes";
 import agentRoutes from "./src/routes/agent.routes";
+import { initDb } from "./src/lib/db";
 
 const app = express();
 
@@ -53,6 +54,7 @@ app.use((_req, res) => {
 
 async function bootstrap() {
     try {
+        await initDb();
         app.listen(process.env.PORT || 3000, () => {
             console.log(`Server is running on port ${process.env.PORT || 3000}`);
         });

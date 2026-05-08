@@ -13,7 +13,7 @@ Return ONLY a valid JSON array with the following structure:
     "description": <string: clear explanation of the goal and why it matters for this customer>,
     "targetAmount": <number or null>,
     "timeline": <"short" | "medium" | "long">,
-    "monthlySaving": <number: suggested monthly contribution or null>,
+    "monthlySavings": <number: suggested monthly contribution or null>,
     "priority": <number: 1 is highest priority>
   }
 ]

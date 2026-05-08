@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fd_001",
+    "userId": "user_001",
+    "fdNumber": "FD2023011001",
+    "principalAmount": 200000,
+    "interestRate": 7.1,
+    "tenureMonths": 24,
+    "startDate": "2025-05-01T00:00:00.000Z",
+    "maturityDate": "2027-05-01T00:00:00.000Z",
+    "maturityAmount": 229686,
+    "interestEarned": 14843,
+    "autoRenew": true,
+    "status": "ACTIVE",
+    "bankName": "StatementIQ Bank"
+  },
+  {
+    "id": "fd_002",
+    "userId": "user_001",
+    "fdNumber": "FD2022008500",
+    "principalAmount": 100000,
+    "interestRate": 6.8,
+    "tenureMonths": 12,
+    "startDate": "2024-03-01T00:00:00.000Z",
+    "maturityDate": "2025-03-01T00:00:00.000Z",
+    "maturityAmount": 106800,
+    "interestEarned": 6800,
+    "autoRenew": false,
+    "status": "MATURED",
+    "bankName": "StatementIQ Bank"
+  }
+]

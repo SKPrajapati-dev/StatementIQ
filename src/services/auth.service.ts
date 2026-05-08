@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { LoginRequest, RegisterRequest } from "../types/user.types";
+import { db } from "../lib/db";
 
 export class AuthService {
     async register(data: RegisterRequest) {

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "loan_001",
+    "userId": "user_001",
+    "loanType": "HOME",
+    "loanAccountNumber": "HL2021004567",
+    "principalAmount": 4500000,
+    "outstandingAmount": 3820000,
+    "interestRate": 8.5,
+    "emiAmount": 18500,
+    "tenureMonths": 240,
+    "startDate": "2022-05-01T00:00:00.000Z",
+    "endDate": "2042-05-01T00:00:00.000Z",
+    "nextEmiDate": "2026-06-05T00:00:00.000Z",
+    "status": "ACTIVE",
+    "bankName": "StatementIQ Bank"
+  },
+  {
+    "id": "loan_002",
+    "userId": "user_001",
+    "loanType": "PERSONAL",
+    "loanAccountNumber": "PL2023009123",
+    "principalAmount": 300000,
+    "outstandingAmount": 120000,
+    "interestRate": 14.5,
+    "emiAmount": 9200,
+    "tenureMonths": 36,
+    "startDate": "2024-05-01T00:00:00.000Z",
+    "endDate": "2027-05-01T00:00:00.000Z",
+    "nextEmiDate": "2026-06-03T00:00:00.000Z",
+    "status": "ACTIVE",
+    "bankName": "StatementIQ Bank"
+  }
+]

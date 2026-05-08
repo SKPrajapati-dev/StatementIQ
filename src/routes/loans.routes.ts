@@ -7,34 +7,34 @@ const router = Router();
 router.use(authMiddleware);
 
 /**
- * GET /api/fd
- * Get all Fixed Deposit accounts for the user
+ * GET /api/loans
+ * Get all loans for the user
  */
 router.get("/", async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const fdAccounts = db.fdAccounts.filter((fd) => fd.userId === req.user!.userId);
-        res.json({ fdAccounts, count: fdAccounts.length });
+        const loans = db.loans.filter((loan) => loan.userId === req.user!.userId);
+        res.json({ loans, count: loans.length });
     } catch (error) {
         next(error);
     }
 });
 
 /**
- * GET /api/fd/:id
- * Get a specific FD account by ID
+ * GET /api/loans/:id
+ * Get a specific loan by ID
  */
 router.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const fdAccount = db.fdAccounts.find(
-            (fd) => fd.id === req.params.id && fd.userId === req.user!.userId
+        const loan = db.loans.find(
+            (loan) => loan.id === req.params.id && loan.userId === req.user!.userId
         );
 
-        if (!fdAccount) {
-            res.status(404).json({ error: "FD account not found" });
+        if (!loan) {
+            res.status(404).json({ error: "Loan not found" });
             return;
         }
 
-        res.json(fdAccount);
+        res.json(loan);
     } catch (error) {
         next(error);
     }
