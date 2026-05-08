@@ -2,3 +2,4 @@ node_modules
 .specify
 .vscode
 .github
+.env

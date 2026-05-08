@@ -22,7 +22,10 @@ export async function runCopilotPrompt(
   model: string = MODELS.SMART
 ): Promise<string> {
   // No token needed — uses the logged-in GitHub Copilot CLI session automatically
-  const client = new CopilotClient();
+  const client = new CopilotClient({
+    gitHubToken: process.env.COPILOT_GITHUB_TOKEN,
+    useLoggedInUser: false,
+  });
 
   await client.start();
 
@@ -37,16 +40,15 @@ export async function runCopilotPrompt(
 
   let responseText = "";
 
-  const done = new Promise<void>((resolve, reject) => {
-    session.on("assistant.message", (event: any) => {
-      responseText += event.data?.content ?? "";
-    });
-    session.on("session.idle", () => resolve());
-    session.on("error" as any, (err: unknown) => reject(err));
+  // Log streaming chunks if they arrive
+  session.on("assistant.message_delta", (event: any) => {
+    console.log("[CopilotSession] Received message chunk:", event.data?.deltaContent);
   });
 
-  await session.send({ prompt: fullPrompt }).then((data) => console.log('Prompt sent successfully', data))
-  await done;
+  // Wait for the final message and session idle state
+  const response = await session.sendAndWait({ prompt: fullPrompt });
+  responseText = response?.data?.content ?? "";
+
 
   await session.disconnect();
   await client.stop();
