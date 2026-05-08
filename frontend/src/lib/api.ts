@@ -12,7 +12,7 @@ import {
   AgentStatus,
 } from "@/types";
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://statementiq-8uvl.onrender.com";
 
 class ApiError extends Error {
   constructor(public status: number, message: string) {

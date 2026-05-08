@@ -163,7 +163,7 @@ export default function DashboardPage() {
                     fontSize: '12px',
                     color: 'var(--text-primary)'
                   }}
-                  formatter={(val: number) => formatCurrency(val)}
+                  //formatter={(val: number) => formatCurrency(val)}
                 />
                 <Bar dataKey="amount" radius={[0, 4, 4, 0]}>
                   {summary?.topSpendingCategories.map((entry, index) => (
