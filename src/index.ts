@@ -6,13 +6,13 @@ import compression from "compression";
 import rateLimit from "express-rate-limit";
 
 //Routes
-import authRoutes from "./src/routes/auth.routes";
-import statementsRoutes from "./src/routes/statements.routes";
-import loansRoutes from "./src/routes/loans.routes";
-import fdRoutes from "./src/routes/fd.routes";
-import investmentsRoutes from "./src/routes/investments.routes";
-import agentRoutes from "./src/routes/agent.routes";
-import { initDb } from "./src/lib/db";
+import authRoutes from "./routes/auth.routes";
+import statementsRoutes from "./routes/statements.routes";
+import loansRoutes from "./routes/loans.routes";
+import fdRoutes from "./routes/fd.routes";
+import investmentsRoutes from "./routes/investments.routes";
+import agentRoutes from "./routes/agent.routes";
+import { initDb } from "./lib/db";
 
 const app = express();
 
