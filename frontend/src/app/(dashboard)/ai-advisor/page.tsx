@@ -113,8 +113,8 @@ export default function AIAdvisorPage() {
         )}
 
         {content.recommendation && (
-          <div style={{ padding: "10px", background: "rgba(16, 185, 129, 0.08)", borderRadius: "8px", border: "1px solid rgba(16, 185, 129, 0.2)" }}>
-            <p style={{ display: "flex", alignItems: "center", gap: "6px", fontWeight: 600, fontSize: "0.8rem", color: "var(--accent-green)", marginBottom: "4px" }}>
+          <div style={{ padding: "10px", background: "var(--bg-secondary)", borderRadius: "8px", border: "1px solid var(--border-card)" }}>
+            <p style={{ display: "flex", alignItems: "center", gap: "6px", fontWeight: 600, fontSize: "0.8rem", color: "var(--accent-primary)", marginBottom: "4px" }}>
               <Sparkles size={14} /> Recommendation
             </p>
             <p style={{ fontSize: "0.85rem", color: "var(--text-primary)" }}>{content.recommendation}</p>

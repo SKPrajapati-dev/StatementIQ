@@ -71,10 +71,7 @@ export default function Sidebar() {
             fontFamily: "'Outfit', sans-serif",
             fontWeight: 800,
             fontSize: "1.25rem",
-            background: "linear-gradient(135deg, var(--text-primary), var(--accent-secondary))",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
+            color: "#000000", // "some black"
           }}
         >
           StatementIQ
@@ -114,8 +111,8 @@ export default function Sidebar() {
                   borderRadius: "var(--radius-sm)",
                   fontWeight: isActive ? 600 : 500,
                   fontSize: "0.9rem",
-                  color: isActive ? "var(--text-primary)" : "var(--text-secondary)",
-                  background: isActive ? "rgba(99, 102, 241, 0.12)" : "transparent",
+                  color: isActive ? "var(--accent-primary)" : "var(--text-secondary)",
+                  background: isActive ? "var(--accent-primary-glow)" : "transparent",
                   border: "1px solid",
                   borderColor: isActive ? "var(--border-active)" : "transparent",
                   transition: "all var(--transition-fast)",

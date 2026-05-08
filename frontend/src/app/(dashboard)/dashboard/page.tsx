@@ -155,12 +155,13 @@ export default function DashboardPage() {
                   width={100}
                 />
                 <Tooltip 
-                  cursor={{ fill: 'rgba(255,255,255,0.05)' }}
+                  cursor={{ fill: 'rgba(215, 90, 71, 0.05)' }}
                   contentStyle={{ 
                     background: 'var(--bg-card)', 
                     borderColor: 'var(--border-card)',
                     borderRadius: '8px',
-                    fontSize: '12px'
+                    fontSize: '12px',
+                    color: 'var(--text-primary)'
                   }}
                   formatter={(val: number) => formatCurrency(val)}
                 />
@@ -168,7 +169,7 @@ export default function DashboardPage() {
                   {summary?.topSpendingCategories.map((entry, index) => (
                     <Cell 
                       key={`cell-${index}`} 
-                      fill={index === 0 ? "var(--accent-primary)" : "rgba(99, 102, 241, 0.4)"} 
+                      fill={index === 0 ? "var(--accent-primary)" : "var(--accent-secondary)"} 
                     />
                   ))}
                 </Bar>
